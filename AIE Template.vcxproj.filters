@@ -110,5 +110,8 @@
     <ClInclude Include="include\WinnerState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\AiMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

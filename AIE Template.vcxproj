@@ -107,6 +107,7 @@
     <ClCompile Include="source\WinnerState.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\AiMath.h" />
     <ClInclude Include="include\Barrel.h" />
     <ClInclude Include="include\BaseState.h" />
     <ClInclude Include="include\DeathState.h" />
