@@ -1,6 +1,8 @@
 #include "Barrel.h"
 #include <iostream>
 
+using namespace AiMath;
+
 Barrel::Barrel()
 {
 	velocity = Vector2(0, 0);

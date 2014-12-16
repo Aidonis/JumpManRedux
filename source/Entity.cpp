@@ -1,6 +1,8 @@
 #include "Entity.h"
 #include <math.h>
 
+using namespace AiMath;
+
 Entity::Entity()
 {
 	velocity = Vector2();

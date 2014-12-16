@@ -10,6 +10,7 @@ extern const int SCREEN_WIDTH;
 extern const int SCREEN_HEIGHT;
 
 int BaseState::SCORE;
+using namespace AiMath;
 
 std::vector<Entity*> GameState::gameObjects;
 

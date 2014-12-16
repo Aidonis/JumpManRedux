@@ -1,7 +1,7 @@
 #ifndef _ENTITY_H_
 #define _ENTITY_H_
 
-#include "Vector2.h"
+#include "AiMath.h"
 
 class Entity
 {
@@ -38,7 +38,7 @@ public:
 	bool IsCollided(Entity* other);
 	virtual bool IsCollideTop(Entity* other);
 
-	Vector2 velocity;
+	AiMath::Vector2 velocity;
 
 
 

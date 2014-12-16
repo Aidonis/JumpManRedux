@@ -114,4 +114,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Library Include="libs\AiMath.lib" />
+  </ItemGroup>
 </Project>

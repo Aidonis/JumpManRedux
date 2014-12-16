@@ -44,6 +44,9 @@
     <OutDir>bin\</OutDir>
     <IntDir>obj\</IntDir>
     <TargetName>$(ProjectName)_d</TargetName>
+    <IncludePath>$(SolutionDir)include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)libs\;$(LibraryPath)</LibraryPath>
+    <SourcePath>$(SolutionDir)source\;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -64,7 +67,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <OutputFile>$(OutDir)$(ProjectName)_d.exe</OutputFile>
       <AdditionalLibraryDirectories>./libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>AIE_1st_Year_Framework_d.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>AIE_1st_Year_Framework_d.lib;AiMath_Dynamic.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ProgramDatabaseFile>$(OutDir)$(ProjectName)_d.pdb</ProgramDatabaseFile>
     </Link>
   </ItemDefinitionGroup>
@@ -124,6 +127,9 @@
     <ClInclude Include="include\SplashScreen.h" />
     <ClInclude Include="include\StateMachine.h" />
     <ClInclude Include="include\WinnerState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libs\AiMath.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
